@@ -1,0 +1,152 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/light_blue">
+
+        <!-- Add Project Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Project"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <!-- Input fields for adding project -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/projectNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Project Name"
+                android:inputType="text"
+                android:textColorHint="@color/hint_color" />
+
+            <EditText
+                android:id="@+id/startDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Start Date (YYYY-MM-DD)"
+                android:inputType="date"
+                android:textColorHint="@color/hint_color" />
+
+            <EditText
+                android:id="@+id/endDateEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="End Date (YYYY-MM-DD)"
+                android:inputType="date"
+                android:textColorHint="@color/hint_color" />
+
+            <EditText
+                android:id="@+id/projectDescriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/hint_color" />
+
+            <EditText
+                android:id="@+id/employeesEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Employees"
+                android:inputType="number"
+                android:textColorHint="@color/hint_color" />
+        </LinearLayout>
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/addProjectButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Project"
+            android:layout_marginTop="16dp"
+            android:background="@color/button_color" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider_color"
+            android:layout_marginVertical="24dp" />
+
+        <!-- View Projects Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Projects"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <Button
+            android:id="@+id/viewProjectsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Projects"
+            android:background="@color/button_color" />
+
+        <!-- Project Table -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp">
+
+            <TableLayout
+                android:id="@+id/projectTableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="1">
+
+                <TableRow>
+                    <TextView android:text="ID" android:textStyle="bold" android:padding="8dp" android:background="@color/gray" />
+                    <TextView android:text="Project Name" android:textStyle="bold" android:padding="8dp" android:background="@color/gray" />
+                    <TextView android:text="Start Date" android:textStyle="bold" android:padding="8dp" android:background="@color/gray" />
+                    <TextView android:text="End Date" android:textStyle="bold" android:padding="8dp" android:background="@color/gray" />
+                    <TextView android:text="Description" android:textStyle="bold" android:padding="8dp" android:background="@color/gray" />
+                    <TextView android:text="Employees" android:textStyle="bold" android:padding="8dp" android:background="@color/gray" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider_color" android:layout_marginVertical="24dp" />
+
+        <!-- Update Project Section -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Update Project" android:textSize="20sp" android:textStyle="bold" android:paddingBottom="16dp" android:textColor="@color/dark_blue" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+
+            <EditText android:id="@+id/updateProjectIdEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Project ID" android:inputType="number" android:textColorHint="@color/hint_color" />
+
+            <EditText android:id="@+id/updateProjectNameEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Project Name" android:inputType="textPersonName" android:textColorHint="@color/hint_color" />
+
+            <EditText android:id="@+id/updateStartDateEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Start Date (YYYY-MM-DD)" android:inputType="date" android:textColorHint="@color/hint_color" />
+
+            <EditText android:id="@+id/updateEndDateEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="End Date (YYYY-MM-DD)" android:inputType="date" android:textColorHint="@color/hint_color" />
+
+            <EditText android:id="@+id/updateProjectDescriptionEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Description" android:inputType="textMultiLine" android:textColorHint="@color/hint_color" />
+
+            <EditText android:id="@+id/updateEmployeesEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Number of Employees" android:inputType="number" android:textColorHint="@color/hint_color" />
+        </LinearLayout>
+
+        <Button android:id="@+id/updateProjectButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Update Project" android:layout_marginTop="16dp" android:background="@color/button_color" />
+        <Button android:id="@+id/removeProjectButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Remove Project" android:layout_marginTop="8dp" android:background="@color/button_color" />
+    </LinearLayout>
+</ScrollView>

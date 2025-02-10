@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/light_blue">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_margin="24dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:background="@color/buttonColor"
+       />
+
+    <!-- Button to manage employees -->
+    <Button
+        android:id="@+id/manageEmployeesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Employees"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="24dp" />
+
+    <!-- Button to manage projects -->
+    <Button
+        android:id="@+id/manageProjectsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Projects"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/manageEmployeesButton"
+        android:layout_marginTop="24dp" />
+
+    <!-- Button to manage tasks -->
+    <Button
+        android:id="@+id/manageTasksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manage Tasks"
+        android:backgroundTint="@color/deep_orange_500"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/manageProjectsButton"
+        android:layout_marginTop="24dp" />
+
+    <!-- Button to view reports -->
+    <Button
+        android:id="@+id/viewReportsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Reports"
+        android:backgroundTint="@color/green_500"
+        android:textColor="@android:color/white"
+        android:layout_below="@id/manageTasksButton"
+        android:layout_marginTop="24dp"
+       />
+
+</RelativeLayout>

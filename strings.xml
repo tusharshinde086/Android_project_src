@@ -1,0 +1,28 @@
+<resources>
+    <!-- General Application -->
+    <string name="app_name">Startup Management System</string>
+
+    <!-- Employee Management Section -->
+    <string name="navigate_employee_management">Navigating to Employee Management</string>
+
+    <!-- Project Management Section -->
+    <string name="navigate_project_management">Navigating to Project Management</string>
+
+    <!-- Task Management Section -->
+    <string name="navigate_task_management">Navigating to Task Management</string>
+
+    <!-- Reports Section -->
+    <string name="navigate_reports">Navigating to Reports</string>
+
+    <!-- Error Handling Section -->
+    <string name="error_navigation">Error: Unable to navigate</string>
+    <string name="error_message">An unexpected error occurred</string>
+
+    <!-- Data Refresh Section -->
+    <string name="data_refreshed">Data refreshed successfully</string>
+
+    <!-- Buttons -->
+    <string name="retry_button">Retry</string>
+
+
+</resources>

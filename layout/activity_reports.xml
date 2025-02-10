@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input fields for report details -->
+    <EditText
+        android:id="@+id/reportTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Report Title"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/reportDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Report Description"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/reportDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (YYYY-MM-DD)"
+        android:inputType="date" />
+
+    <!-- Buttons for adding, updating, and deleting reports -->
+    <Button
+        android:id="@+id/addReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Report" />
+
+    <Button
+        android:id="@+id/updateReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Report" />
+
+    <Button
+        android:id="@+id/deleteReportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Report" />
+
+    <!-- ListView to display reports -->
+    <ListView
+        android:id="@+id/reportsListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:paddingTop="20dp" />
+
+
+</LinearLayout>

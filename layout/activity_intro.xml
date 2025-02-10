@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor">
+
+    <!-- Login button in the top-right corner -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/buttonColor"
+        android:textColor="@color/white"/>
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ts14"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <!-- ScrollView for scrolling content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/logoImageView"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/projectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Startup Management System"
+                android:textSize="26sp"
+                android:textColor="@color/primaryColor"
+                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:background="@color/titleBackground"/>
+
+            <!-- Intro Text -->
+            <TextView
+                android:id="@+id/introText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Startup Management System is a role-based Android application designed to automate and streamline the management of employees, projects, and tasks within a startup organization."
+                android:textSize="18sp"
+                android:textColor="@color/introTextColor"
+                android:lineSpacingExtra="4dp"
+                android:layout_below="@id/projectTitle"
+                android:layout_marginBottom="16dp"
+                android:background="@color/introBackground"/>
+
+            <!-- Features Section -->
+            <TextView
+                android:id="@+id/featuresHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Features"
+                android:textSize="22sp"
+                android:textColor="@color/featureHeaderColor"
+                android:layout_below="@id/introText"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:background="@color/featureHeaderBackground"/>
+
+            <TextView
+                android:id="@+id/featuresList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Role-Based Authentication\n• Employee Management\n• Project Management\n• Task Management\n• Reports Module"
+                android:textSize="18sp"
+                android:textColor="@color/featuresTextColor"
+                android:layout_below="@id/featuresHeader"
+                android:layout_marginBottom="16dp"
+                android:background="@color/featuresBackground"/>
+
+            <!-- Objective Section -->
+            <TextView
+                android:id="@+id/objectiveHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Objective / Aim"
+                android:textSize="22sp"
+                android:textColor="@color/objectiveHeaderColor"
+                android:layout_below="@id/featuresList"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:background="@color/objectiveHeaderBackground"/>
+
+            <TextView
+                android:id="@+id/objectiveText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The primary objective of the Startup Management System is to provide a reliable platform that ensures efficient management of employees, projects, and tasks."
+                android:textSize="18sp"
+                android:textColor="@color/objectiveTextColor"
+                android:layout_below="@id/objectiveHeader"
+                android:layout_marginBottom="16dp"
+                android:background="@color/objectiveBackground"/>
+
+            <!-- Methodology Section -->
+            <TextView
+                android:id="@+id/methodologyHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Methodology"
+                android:textSize="22sp"
+                android:textColor="@color/methodologyHeaderColor"
+                android:layout_below="@id/objectiveText"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold"
+                android:background="@color/methodologyHeaderBackground"/>
+
+            <TextView
+                android:id="@+id/methodologyText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Database Setup\n2. SQLite Connection\n3. User Interface Design\n4. Functional Modules"
+                android:textSize="18sp"
+                android:textColor="@color/methodologyTextColor"
+                android:layout_below="@id/methodologyHeader"
+                android:layout_marginBottom="16dp"
+                android:background="@color/methodologyBackground"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
